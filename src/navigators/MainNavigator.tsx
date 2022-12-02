@@ -6,6 +6,7 @@ import {
 } from '@react-navigation/native-stack';
 import HomeScreen from 'screens/HomeScreen';
 import TestScreen from 'screens/TestScreen';
+import Chat from 'screens/Chat';
 
 const Stack = createNativeStackNavigator();
 
@@ -21,6 +22,7 @@ const commonOptions: NativeStackNavigationOptions = {
 const MainNavigator = () => (
   <NavigationContainer>
     <Stack.Navigator>
+      <Stack.Screen name="Chat" component={Chat} options={commonOptions} />
       <Stack.Screen name="Home" component={HomeScreen} options={commonOptions} />
       <Stack.Screen name="Test" component={TestScreen} options={commonOptions} />
     </Stack.Navigator>
