@@ -1,5 +1,6 @@
 ##  Twitter Animations
 
+I used `rn-template-app` for creating this project.
 
 ## Quick Start
 ```
